@@ -3,16 +3,58 @@ html {
 }
 
 body {
+    text-align: left;
+    background-color: lightgray;
+}
+
+.grid {
     display: grid;
-    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    grid-template: repeat(5, 200px) / repeat(3, 1fr);
+    grid
 }
 
 /* HEADER */
 header {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 12;
+    height: 100px;
+    width: 100%;
+    background-color: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: black;
+    margin: 0 10px;
+}
+
+/* ABOUT ME */
+#about {
+    height: 200px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* PROJECTS */
+#projects {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+/* CONTACT */
+#contact {
+    grid-area: 4 / 1 / 5 / 3;
 }
 
 img {
+    grid-area: 2 / 3 / 3 / 4;
     width: 300px;
 }
