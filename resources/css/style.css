@@ -9,5 +9,10 @@ body {
 
 /* HEADER */
 header {
-    
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 12;
+}
+
+img {
+    width: 300px;
 }
