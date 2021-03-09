@@ -2,18 +2,16 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    text-align: left;
+main {
     background-color: lightgray;
 }
 
 .grid {
     display: grid;
-    grid-template: repeat(5, 100px) / repeat(3, 1fr);
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
-    grid-template-areas: 
-                        "header header header"
+    grid-template-areas:"head head head"
                         "about about self"
                         "projects projects self"
                         "contact contact self"
@@ -22,10 +20,9 @@ body {
 
 /* HEADER */
 header {
-    height: 100px;
-    width: 100%;
+    grid-area: head;
     background-color: lightskyblue;
-    grid-area: header;
+    display: flex;
     align-items: center;
 }
 
@@ -61,17 +58,18 @@ header a {
 
 #contact .methods a {
     color: black;
+    margin: 0 30px;
 }
 
 /* SELF */
-.self {
+#self {
     grid-area: self;
 }
 
-.self .picture {
+#self .picture {
 
 }
 
-.self img {
-    width: 300px;
+#self img {
+    width: 200px;
 }
