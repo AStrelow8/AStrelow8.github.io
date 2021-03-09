@@ -9,8 +9,15 @@ body {
 
 .grid {
     display: grid;
-    grid-template: repeat(5, 200px) / repeat(3, 1fr);
-    grid
+    grid-template: repeat(5, 100px) / repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+                        "header header header"
+                        "about about self"
+                        "projects projects self"
+                        "contact contact self"
+                        "footer footer footer";
 }
 
 /* HEADER */
@@ -18,10 +25,7 @@ header {
     height: 100px;
     width: 100%;
     background-color: lightskyblue;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area: header;
     align-items: center;
 }
 
@@ -37,24 +41,37 @@ header a {
 
 /* ABOUT ME */
 #about {
-    height: 200px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: about;
 }
 
 /* PROJECTS */
 #projects {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: projects;
 }
 
 /* CONTACT */
 #contact {
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: contact;
 }
 
-img {
-    grid-area: 2 / 3 / 3 / 4;
+#contact .methods {
+    display: flex;
+    align-items: center;
+}
+
+#contact .methods a {
+    color: black;
+}
+
+/* SELF */
+.self {
+    grid-area: self;
+}
+
+.self .picture {
+
+}
+
+.self img {
     width: 300px;
 }
