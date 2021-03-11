@@ -1,9 +1,10 @@
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    margin: 0;
 }
 
 main {
     background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .grid {
@@ -20,10 +21,15 @@ main {
 
 /* HEADER */
 header {
+    height: 100px;
     grid-area: head;
     background-color: lightskyblue;
     display: flex;
     align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
 }
 
 header nav {
@@ -38,16 +44,19 @@ header a {
 
 /* ABOUT ME */
 #about {
+    margin-left: 20px;
     grid-area: about;
 }
 
 /* PROJECTS */
 #projects {
+    margin-left: 20px;
     grid-area: projects;
 }
 
 /* CONTACT */
 #contact {
+    margin-left: 20px;
     grid-area: contact;
 }
 
