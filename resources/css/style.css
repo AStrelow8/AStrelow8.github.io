@@ -1,6 +1,10 @@
+html {
+    
+}
+
 body {
     margin: 0;
-    background-image: url(../images/background-stars.jpg);
+    background-image: url("../images/background-stars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.75);
@@ -28,7 +32,7 @@ main {
 header {
     height: 100px;
     grid-area: head;
-    background-image: url("../images/banner-space.jpg.png");
+    background-image: url("../images/banner-space.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
