@@ -14,7 +14,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    grid-template: 100px repeat(4, 1fr) / repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
     grid-template-areas:"head head head"
