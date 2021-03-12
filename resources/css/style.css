@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: multiply;
+    line-height: 30px;
 }
 
 main {
@@ -22,9 +23,9 @@ main {
     row-gap: 10px;
     column-gap: 10px;
     grid-template-areas:"head head head"
-                        "about about self"
-                        "projects projects self"
-                        "contact contact self"
+                        "about about about"
+                        "projects self contact"
+                        "projects self contact"
                         "footer footer footer";
 }
 
@@ -59,8 +60,10 @@ header a {
 
 /* ABOUT ME */
 #about {
-    margin-left: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
     grid-area: about;
+    text-align: center;
 }
 
 /* PROJECTS */
@@ -76,7 +79,7 @@ header a {
 }
 
 #contact .methods {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
 }
 
@@ -88,6 +91,8 @@ header a {
 /* SELF */
 #self {
     grid-area: self;
+    justify-items: right;
+    align-items: right;
 }
 
 #self .picture {
@@ -95,5 +100,5 @@ header a {
 }
 
 #self img {
-    width: 200px;
+    width: 400px;
 }
