@@ -51,6 +51,8 @@ header a {
     margin: 0 10px;
 }
 
+/********** HOME PAGE **********/
+
 /* ABOUT ME */
 #about {
     margin-left: 150px;
@@ -98,4 +100,19 @@ header a {
 
 #self img {
     width: 400px;
+}
+
+
+/********** CONTACT PAGE **********/
+.info {
+    grid-area: self;
+    text-align: center;
+}
+
+.info form fieldset {
+    text-align: left;
+}
+
+.info form fieldset legend {
+    text-align: center;
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>AS - Contact</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="grid">
+                <header>
+                    <h1>Andrew Strelow</h1>
+                    <nav>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="#projects">My Projects</a></p>
+                        <p><a href="contact.html">Contact Me</a></p>
+                    </nav>
+                </header>
+
+                <div class="info">
+                    <p>Please fill out the form below.</p>
+
+                    <form action="#" method="POST">
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <label for="guestname">Name: </label>
+                            <input type="text" name="guestname" id="guestname" minlength="3" maxlength="30" size="30">
+                            <br>
+                            <label for="guestemail">Email: </label>
+                            <input type="email" name="guestemail" id="guestemail" minlength="5" maxlength="50" size="30">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Reason for Contact</legend>
+                            <label for="guest-contact-reason">Reason: </label>
+                            <select name="guest-contact-reason" id="guest-contact-reason">
+                                <option value="blank"></option>
+                                <option value="job-opp">Career Opportunity</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <br>
+                            <label for="contact-desc">Explain reason for contact request: </label>
+                            <textarea name="contact-desc" id="contact-desc" cols="30" rows="10" placeholder="Enter your reason..."></textarea>
+                        </fieldset>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+
+
+            </div>
+        </main>
+    </body>
+
+</html>
