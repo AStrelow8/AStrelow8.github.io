@@ -9,7 +9,7 @@
 
     <body>
         <main>
-            <div class="grid">
+            <div class="contact-grid">
                 <header>
                     <h1>Andrew Strelow</h1>
                     <nav>
@@ -19,10 +19,10 @@
                     </nav>
                 </header>
 
-                <div class="info">
+                <div id="contact-form">
                     <p>Please fill out the form below.</p>
 
-                    <form action="#" method="POST">
+                    <form action="mailto:andrewstrelowjr@gmail.com" method="POST">
                         <fieldset>
                             <legend>Personal Details</legend>
                             <label for="guestname">Name: </label>
@@ -42,15 +42,17 @@
                             </select>
                             <br>
                             <label for="contact-desc">Explain reason for contact request: </label>
+                            <br>
                             <textarea name="contact-desc" id="contact-desc" cols="30" rows="10" placeholder="Enter your reason..."></textarea>
                         </fieldset>
-                        <input type="submit" name="submit" value="Submit">
+                        <input type="submit" id="submit" name="submit" value="Submit">
                     </form>
                 </div>
 
 
             </div>
         </main>
+        <script src="./resources/script/contact.js"></script>
     </body>
 
 </html>

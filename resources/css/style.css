@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-.grid {
+.home-grid {
     display: grid;
     grid-template: 100px 200px 600px 100px / 1fr 400px 1fr;
     row-gap: 10px;
@@ -104,15 +104,17 @@ header a {
 
 
 /********** CONTACT PAGE **********/
-.info {
-    grid-area: self;
-    text-align: center;
+.contact-grid {
+    display: grid;
+    grid-template: 100px 1fr 100px / repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas:"head head head"
+                        "form form form"
+                        "footer footer footer";
 }
 
-.info form fieldset {
-    text-align: left;
-}
-
-.info form fieldset legend {
+#contact-form {
+    grid-area: 2 / 2 / span 1 / span 1;
     text-align: center;
 }
